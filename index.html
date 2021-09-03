@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Tip calculator app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="logo"><img src="./images/logo.svg" alt="logo" /></div>
+    <div class="container">
+      <div class="inputs">
+        <div>
+          <label>Bill</label>
+          <div class="userInput">
+            <img src="/images/icon-dollar.svg" alt="dollar icon" />
+            <input type="text" name="bill" id="totalBill" />
+          </div>
+        </div>
+        <div>
+          <label>select Tip %</label>
+          <div class="percentageBtn">
+            <button class="tip">5%</button>
+            <button class="tip">10%</button>
+            <button class="tip selected">15%</button>
+            <button class="tip">25%</button>
+            <button class="tip">50%</button>
+            <input type="text" name="custom" id="customPercentage" />
+          </div>
+        </div>
+        <div>
+          <label>Number of People</label>
+          <div class="userInput">
+            <img src="/images/icon-person.svg" alt="person icon" />
+            <input type="text" name="people" id="people" />
+          </div>
+        </div>
+      </div>
+      <div class="result">
+        <div class="main">
+          <div>
+            <label>Tip Amount</label>
+            <label>/person</label>
+          </div>
+          <div><h4 class="tipAmount">$4.27</h4></div>
+        </div>
+        <div class="main">
+          <div>
+            <label>Total</label>
+            <label>/person</label>
+          </div>
+          <div><h4 class="totalAmount">$32.79</h4></div>
+        </div>
+        <div class="reset">
+          <button class="resetBtn">reset</button>
+        </div>
+      </div
+    <!-- Javascript -->
+    <script src="app.js"></script>
+  </body>
+</html>

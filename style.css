@@ -1,0 +1,165 @@
+:root {
+  /* Colors */
+
+  /*  Primary */
+
+  --Strongcyan: hsl(172, 67%, 45%);
+
+  /* Neutral */
+
+  --Verydarkcyan: hsl(183, 100%, 15%);
+  --Darkergrayishcyan: hsl(186, 14%, 43%);
+  --Darkgrayishcyan: hsl(184, 14%, 56%);
+  --Lightgrayishcyan: hsl(185, 41%, 84%);
+  --Lightergrayishcyan: hsl(189, 41%, 97%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--Lightgrayishcyan);
+  font-family: 'Space Mono', monospace;
+  font-size: 24px;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  margin-top: 40px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.logo img {
+  width: 88px;
+  height: 56px;
+}
+
+.container {
+  z-index: 1;
+}
+
+.inputs {
+  background-color: var(--White);
+  width: 100vw;
+  height: 82.5vh;
+  position: absolute;
+  bottom: 0;
+  border-radius: 24px 24px 0 0;
+}
+.inputs > div {
+  margin-top: 16px;
+}
+
+label {
+  margin-left: 16px;
+  font-size: 1rem;
+  color: var(--Darkergrayishcyan);
+}
+
+.userInput {
+  width: 328px;
+  background-color: var(--Lightergrayishcyan);
+  margin-left: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.userInput img {
+  width: 12px;
+  height: 16px;
+}
+
+input {
+  border-style: none;
+  background-color: var(--Lightergrayishcyan);
+  caret-color: var(--Verydarkcyan);
+  color: var(--Verydarkcyan);
+  font-weight: 700;
+  height: 28px;
+  padding: 2px;
+}
+
+button {
+  width: 156px;
+  height: 32px;
+}
+
+#customPercentage {
+  width: 152px;
+}
+
+input[type='text'] {
+  width: 284px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.percentageBtn {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 8px;
+  column-gap: 16px;
+  justify-content: center;
+}
+
+button {
+  border: 0;
+  border-radius: 8px;
+  font-size: large;
+  font-weight: 700;
+}
+
+.tip {
+  background-color: var(--Verydarkcyan);
+  color: var(--White);
+}
+
+.result {
+  background-color: var(--Verydarkcyan);
+  width: 100vw;
+  height: 28.5vh;
+  position: absolute;
+  bottom: 0;
+  border-radius: 16px 16px 0 0;
+}
+
+.main {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+.main > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.totalAmount,
+.tipAmount {
+  margin-right: 16px;
+  color: var(--Strongcyan);
+}
+
+.reset {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.resetBtn {
+  width: 328px;
+  background-color: var(--Strongcyan);
+  color: var(--Verydarkcyan);
+}
